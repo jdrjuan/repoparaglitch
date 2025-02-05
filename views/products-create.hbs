@@ -1,0 +1,95 @@
+<h1>Alta de Productos</h1>
+
+<form action="/products/create" method="POST" id="products-create-form">
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Ej: TV" autofocus>
+    </div>
+    
+    <div class="form-group">
+        <label for="price">Precio</label>
+        <input type="number" name="price" id="price">
+    </div>
+    
+    <div class="form-group">
+        <label for="stock">Stock</label>
+        <input type="number" name="stock" id="stock">
+    </div>
+
+   
+    <div class="form-group">
+        <label for="brand">Marca</label>
+        <input type="text" name="brand" id="brand" list="brands">
+    </div>
+
+    <datalist id="brands">
+        <option value="Acer">
+        <option value="Amazon">
+        <option value="Apple">
+        <option value="Asus">
+        <option value="BlackBerry">
+        <option value="Dell">
+        <option value="Google">
+        <option value="HP">
+        <option value="HTC">
+        <option value="Huawei">
+        <option value="Lenovo">
+        <option value="LG">
+        <option value="Microsoft">
+        <option value="Motorola">
+        <option value="Nokia">
+        <option value="OnePlus">
+        <option value="Panasonic">
+        <option value="Philips">
+        <option value="Samsung">
+        <option value="Sharp">
+        <option value="Sony">
+        <option value="Toshiba">
+        <option value="Vivo">
+        <option value="Xiaomi">
+        <option value="ZTE">
+    </datalist>
+    
+    <div class="form-group">
+        <label for="category">Categoría</label>
+        <input type="text" name="category" id="category" list="categories">
+    </div>
+
+    <datalist id="categories">
+        <option value="Electrónica">
+        <option value="Ropa">
+        <option value="Hogar">
+        <option value="Juguetes">
+        <option value="Deportes">
+        <option value="Libros">
+        <option value="Música">
+        <option value="Videojuegos">
+        <option value="Salud">
+        <option value="Belleza">
+    </datalist>
+
+    <div class="form-group">
+        <label for="shortDescription">Descripción corta</label>
+        <input type="text" name="shortDescription" id="shortDescription">
+    </div>
+    
+    <div class="form-group">
+        <label for="longDescription">Descripción larga</label>
+        <textarea name="longDescription" id="longDescription"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <input type="checkbox" name="freeShipping" id="freeShipping" value="1">
+        <label for="freeShipping">Envío gratis</label>
+    </div>
+    
+    <div class="form-group">
+        <label class="btn-like" for="mainPhoto">Foto principal</label>
+        <input type="file" name="mainPhoto" id="mainPhoto">
+    </div>
+
+    <input type="submit" value="Crear">
+    <input type="reset" value="Restablecer">
+        
+</form>
+<script src="/js/products-create.js"></script>
