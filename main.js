@@ -57,7 +57,7 @@ app.get('/products/:id', (req, res) => {
 ////////////////////////////////////////////////////////////////////////////////
 
 app.post('/products/create', (req, res) => {
-    res.send('<h1>Producto dado de alta con éxito</h1>');
+    res.send('<h1>Producto dado de alta con éxito!</h1>');
 });
 
 
